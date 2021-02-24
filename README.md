@@ -1,24 +1,18 @@
-# new_app_front
+# App para consulta de índices financeiros, câmbios e criptomoedas
 
-## Project setup
-```
-npm install
-```
+## Objetivo do App
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Esse app esta sendo desenvolvida com o intuito de praticar os meus estudos e aprofundar meus conhecimentos no frontend, assim assimilando como é o desenvolvimento de uma aplicação completa.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## O que foi feito até aqui?
 
-### Lints and fixes files
-```
-npm run lint
-```
+Criação do projeto com Vue.js, esse frontend irá consumir dados de uma API criada por mim, nessa projeto iremos utilizar dados de cotações de diversas moedas para BRL e cotações de criptomoedas para BRL. No primeiro momento será somente apresentado os dados sem nenhuma análise mais profunda, num próximo momento será incrementado graficos para ajudar a compreender as variações de cada moeda.
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+O backend foi desenvolvido com Javascript utilizando node, express, cors, axios e o banco de dados escolhido foi o mysql.
+
+## Aprendizado
+
+- Criação do Projeto utilizando Vue CLI.
+- Aprendendo a estrutura do projeto.
+- Aprendendo a estrutura do componente.
+- Utilização do axios para consumo de API.
