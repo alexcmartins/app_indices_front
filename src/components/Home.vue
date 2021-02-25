@@ -1,32 +1,37 @@
 <template>
     <div class="main">
-    <h1>{{ msg }}</h1>
-    <p>Teste</p>
-    </div>
+      <Navbar/>
+      <div class="body">
+        <div class="table">
+          <Exchange/>
+        </div>
+      </div>
+    </div>  
 </template>
 
 <script>
+import Navbar from './Navbar'
+import Exchange from './Exchange'
+
 export default {
   name: 'Home',
-  props: {
-    msg: String
+  components: {
+    Navbar,
+    Exchange
   }
 }    
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.main {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.body {
+  width: 100%;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
+
 </style>

@@ -1,16 +1,20 @@
 <template>
     <div class="main">
-        <div class="login">
-            <div class="content-login">
+        <div class="signup">
+            <div class="content-signup">
                 <header>
-                    <h3>Vamos nos conectar!</h3>
+                    <h3>Vamos criar uma conta!</h3>
                     <br>
-                        <div class="content-login-new-user">
-                            <p>Novo no CotaçãoAgora?</p><a href="#/signup">Crie a sua conta aqui!</a>
+                        <div class="content-account-already">
+                            <p>Já possui uma conta!</p> <a href="#/login">Entre na sua conta aqui!</a>
                         </div>
                 </header>
                 <div class="form">
                     <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName" class="form-label">Nome</label>
+                            <input type="Name" class="form-control" id="exampleInputName">
+                        </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -24,7 +28,7 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Não sou um robô.</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Entrar</button>
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
                     </form>
                 </div>                    
             </div>
@@ -44,16 +48,16 @@ export default {
     height: 100%;
 }
 
-.login {
+.signup {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.content-login {
+.content-signup {
     width: 400px;
-    height: 450px;
+    height: 550px;
     background-color: rgb(121, 142, 180);
     border-radius: 10px;
     display: flex;
@@ -62,7 +66,7 @@ export default {
     align-items: center;
 }
 
-.content-login header {
+.content-signup header {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -71,13 +75,13 @@ export default {
     margin-bottom: 30px;
 }
 
-.content-login-new-user {
+.content-account-already {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.content-login h3 {
+.content-signup h3 {
     font-weight: bolds;
     color: rgb(70, 199, 149);
 }

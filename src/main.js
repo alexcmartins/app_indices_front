@@ -4,13 +4,15 @@ import VueRouter from 'vue-router'
 
 import Home from './components/Home'
 import Login from './components/Login'
+import Signup from './components/Signup'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
 const routes = [
   { path: '/', component: Home },
-  { path: '/login', component: Login }
+  { path: '/login', component: Login },
+  { path: '/signup', component: Signup }
 ]
 
 const router = new VueRouter({

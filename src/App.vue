@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <Home msg="Cotações de Moedas e Criptomoedas"/>
-    <router-view></router-view>
-    <Exchange/>
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './components/Home'
-import Exchange from './components/Exchange'
+//import Home from './components/Home'
+//import Exchange from './components/Exchange'
 
 
 export default {
   name: 'App',
   components: {
-    Home,
-    Exchange
+    
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
