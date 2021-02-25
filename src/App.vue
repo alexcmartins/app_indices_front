@@ -1,17 +1,21 @@
 <template>
   <div id="app">
     <Home msg="Cotações de Moedas e Criptomoedas"/>
-    
+    <router-view></router-view>
+    <Exchange/>
   </div>
 </template>
 
 <script>
 import Home from './components/Home'
+import Exchange from './components/Exchange'
+
 
 export default {
   name: 'App',
   components: {
-    Home
+    Home,
+    Exchange
   }
 }
 </script>
