@@ -3,10 +3,10 @@
         <div class="signup">
             <div class="content-signup">
                 <header>
-                    <h3>Vamos criar uma conta!</h3>
+                    <h3>Vamos criar sua conta?</h3>
                     <br>
                         <div class="content-account-already">
-                            <p>Já possui uma conta!</p> <a href="#/login">Entre na sua conta aqui!</a>
+                            <p>Já possui uma conta?</p><a href="#/login">Clique aqui!</a>
                         </div>
                 </header>
                 <div class="form">
@@ -49,10 +49,10 @@ export default {
 }
 
 .signup {
+    margin-top: 40px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .content-signup {
@@ -64,6 +64,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .content-signup header {
@@ -78,7 +80,7 @@ export default {
 .content-account-already {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .content-signup h3 {

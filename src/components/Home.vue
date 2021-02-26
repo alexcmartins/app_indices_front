@@ -1,8 +1,7 @@
 <template>
     <div class="main">
-      <Navbar/>
       <div class="body">
-        <div class="table">
+        <div class="table-exchange">
           <Exchange/>
         </div>
       </div>
@@ -10,13 +9,11 @@
 </template>
 
 <script>
-import Navbar from './Navbar'
 import Exchange from './Exchange'
 
 export default {
   name: 'Home',
   components: {
-    Navbar,
     Exchange
   }
 }    

@@ -6,7 +6,7 @@
                     <h3>Vamos nos conectar!</h3>
                     <br>
                         <div class="content-login-new-user">
-                            <p>Novo no CotaçãoAgora?</p><a href="#/signup">Crie a sua conta aqui!</a>
+                            <p>Novo no Cota Agora?</p><a href="#/signup">Crie a sua conta aqui!</a>
                         </div>
                 </header>
                 <div class="form">
@@ -45,10 +45,10 @@ export default {
 }
 
 .login {
+    margin-top: 40px;
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
 .content-login {
@@ -60,6 +60,8 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto
 }
 
 .content-login header {
@@ -74,7 +76,7 @@ export default {
 .content-login-new-user {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .content-login h3 {
@@ -85,7 +87,7 @@ export default {
 .form {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 

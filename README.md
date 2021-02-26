@@ -15,4 +15,7 @@ O backend foi desenvolvido com Javascript utilizando node, express, cors, axios 
 - Criação do Projeto utilizando Vue CLI.
 - Aprendendo a estrutura do projeto.
 - Aprendendo a estrutura do componente.
+- Criação de novos componentes e reutilização dos mesmos.
 - Utilização do axios para consumo de API.
+- Utilização do Bootstrap 5 com Vue.js.
+- Utilização do CSS.

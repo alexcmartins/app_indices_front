@@ -1,27 +1,24 @@
 <template>
   <div id="app">
+    <Navbar/>
       <router-view></router-view>
   </div>
 </template>
 
 <script>
-//import Home from './components/Home'
+import Navbar from './components/Navbar'
 //import Exchange from './components/Exchange'
 
 
 export default {
   name: 'App',
   components: {
-    
+    Navbar
   }
 }
 </script>
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,700&display=swap');
 
@@ -31,6 +28,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 5px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 </style>
