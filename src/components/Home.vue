@@ -4,7 +4,6 @@
         <div class="table-exchange">
           <Exchange/>
         </div>
-        <hr>
         <div class="table-criptocoins">
           <Criptocoins/>
         </div>

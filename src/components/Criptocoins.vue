@@ -1,5 +1,6 @@
 <template>
     <div class="main">
+        <hr>
         <div class="criptocoins">
             <div class="top">
                 <h3>Criptomoedas</h3>
