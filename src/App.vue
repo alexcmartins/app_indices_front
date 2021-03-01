@@ -7,8 +7,6 @@
 
 <script>
 import Navbar from './components/Navbar'
-//import Exchange from './components/Exchange'
-
 
 export default {
   name: 'App',

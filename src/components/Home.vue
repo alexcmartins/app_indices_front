@@ -4,17 +4,24 @@
         <div class="table-exchange">
           <Exchange/>
         </div>
+        <hr>
+        <div class="table-criptocoins">
+          <Criptocoins/>
+        </div>
+        <hr>
       </div>
     </div>  
 </template>
 
 <script>
 import Exchange from './Exchange'
+import Criptocoins from './Criptocoins'
 
 export default {
   name: 'Home',
   components: {
-    Exchange
+    Exchange,
+    Criptocoins
   }
 }    
 </script>
