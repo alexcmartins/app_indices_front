@@ -7,7 +7,6 @@
         <div class="table-criptocoins">
           <Criptocoins/>
         </div>
-        <hr>
       </div>
     </div>  
 </template>

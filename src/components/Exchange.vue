@@ -1,16 +1,14 @@
 <template>
     <div class="main">
-        <hr>
+        <div class="card">
+        <h5 class="card-title">Moedas</h5>
+        <div class="card-body">
         <div class="exchangecoins">
-            <div class="top">
-                <h3>Moedas</h3>
-            </div>
-            <div class="content">
+            <div class="table-responsive-sm">
             <table class="table table-hover">
                 <thead>
                     <tr>
                     <th scope="col">Nome</th>
-                    <th scope="col">Simbolo</th>
                     <th scope="col">Compra</th>
                     <th scope="col">Venda</th>
                     <th scope="col">Ult. Atualização</th>
@@ -18,15 +16,17 @@
                 </thead>
                 <tbody>
                     <tr v-for="exchange of exchanges" :key="exchange.id">
-                    <th scope="row">{{exchange.name}}</th>
-                    <td>{{exchange.symbol}}</td>
-                    <td>R$ {{exchange.price_buy}}</td>
-                    <td>R$ {{exchange.price_sale}}</td>
-                    <td>{{exchange.last_updated_price}}</td>
+                    <th scope="row">{{exchange.name}}<br>{{exchange.symbol}}</th>
+                    <td>{{exchange.price_buy.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}}</td>
+                    <td>{{exchange.price_sale.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'})}}</td>
+                    <td>{{new Intl.DateTimeFormat('pt-BR', {dateStyle: "short"}).format(exchange.last_updated_pric)}}<br>
+                        {{new Intl.DateTimeFormat('pt-BR', {timeStyle: "medium"}).format(exchange.last_updated_pric)}}</td>
                     </tr>
                 </tbody>
             </table>
             </div>
+        </div>
+        </div>
         </div>
     </div>
 </template>
@@ -51,7 +51,7 @@ export default {
         async getExchange(){
             const response = await axios.get('http://cmdev.ddns.net:3000/v1/api/exchange');
             if(response.status == 200){
-                console.log(response.data)
+                
                 this.exchanges = response.data;
             }else {
                 console.error('Ocorreu um erro!')
