@@ -1,6 +1,6 @@
 <template>
     <div class="main">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">Cota Agora</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,10 +12,10 @@
                 <a class="nav-link active" aria-current="page" href="#/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#/criptomoedas">Criptomoedas</a>
+                <a class="nav-link active" aria-current="page" href="#/cripto">Criptomoedas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#/exchange">Cotações</a>
+                <a class="nav-link active" aria-current="page" href="#/quotation">Cotações</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#/login">Entrar</a>

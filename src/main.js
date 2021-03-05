@@ -2,11 +2,11 @@ import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
 
-import Home from './components/Home'
-import Login from './components/Login'
-import Signup from './components/Signup'
-import Criptocoins from './components/Criptocoins'
-import Exchange from './components/Exchange'
+import Home from './pages/Home'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
+import Cripto from './pages/Cripto'
+import Quotation from './pages/Quotation'
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
@@ -15,8 +15,8 @@ const routes = [
   { path: '/', component: Home },
   { path: '/login', component: Login },
   { path: '/signup', component: Signup },
-  { path: '/criptomoedas', component: Criptocoins },
-  { path: '/exchange', component: Exchange }
+  { path: '/cripto', component: Cripto },
+  { path: '/quotation', component: Quotation }
 ]
 
 const router = new VueRouter({
